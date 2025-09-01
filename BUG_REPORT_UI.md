@@ -38,3 +38,26 @@ Table should be sorted by a logical column (e.g., Name, Salary, Date created) to
 Table is sorted by UUID Id, which is random and makes the list inconsistent.  
 
 **Severity:** Low  
+
+---
+
+## Bug 8 – UI becomes unresponsive after idle time
+
+**Summary:**  
+The UI stops working after idle time with no automatic logout or error notification, end-user might think the app is broken if it silently stops working.
+
+**Steps to Reproduce:**
+1. Log into the Paylocity Benefits Dashboard with valid credentials.
+2. Leave the application idle for a period of time (e.g., 10–15 minutes).
+3. Attempt to interact with the UI, such as:
+    - Clicking Add Employee
+    - Editing an existing employee
+    - Deleting a record
+
+**Expected Result:**
+The application should either remain responsive and continue working after idle time, or log the user out automatically with a clear notification that the session has expired.
+
+**Actual Result:**
+The UI becomes unresponsive, no logout occurs, no error or timeout notification is shown to the user and user must log in again to regain functionality.
+
+**Severity:** Medium
