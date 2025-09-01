@@ -20,7 +20,7 @@ paylocity-ste-assessment/
 ```
 
 ## How to Run – API Tests (Postman)
-1. Open Postman → **Import** → select `api-tests/Paylocity_Automation_Challenge.postman_collection.json`.
+1. Open Postman → **Import** → select `api-tests/Paylocity_Automation_Challenge_PabloJaquez.postman_collection.json`.
 2. If needed, update the `{{baseUrl}}` and the authorization headers.
 3. Run the `API Testing` folder; assertions (`pm.test`) validate status codes and behaviors.
 
